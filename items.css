@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+   
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    bottom: 85%;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+   background-color: white;
+    border: 2px solid none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    font-size: 18px;
+  }
+  .logo{
+      width: 100px;
+      cursor: pointer;
+      margin: 30px 0;
+      margin-top: 35%;
+}
+.menu-icon{
+    width: 70px;
+    cursor: pointer;
+    display: none;
+    margin: 30px 0;
+    margin-top: 0.5%;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14;
+}
+nav ul li a:hover{
+    color: black(164, 0, 0);
+}
+
+
+.navbar .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navbar .btnlogin-popup:hover {
+    background: black;
+    color: white;
+    
+}
+.navbar li{
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar li:hover::after{
+    transition: left;
+         transform: scaleX(1);
+
+}
+
+.keyboard3 {
+    width: 200px;
+    margin-top:190px;
+    margin-left:50px;
+    width:200px;
+}
+.keyboard2 {
+    width: 200px;
+    margin-top:0px;
+    margin-left:530px;
+    width:200px;
+}
+.keyboard4 {
+    margin-top:190px;
+    margin-left:340px;
+    width:200px;
+}
+.headset1 {
+    margin-top:200px;
+    margin-left:50px;
+    width:200px;
+}
+.headset2 {
+    margin-top:200px;
+    margin-left:270px;
+    width:200px;
+}
+.headset3 {
+    margin-top:200px;
+    margin-left:270px;
+    width:200px;
+}
+.mouse1{
+    margin-top:280px;
+    margin-left:80px;
+    width:100px;
+}
+.mouse2{
+    margin-top:280x;
+    margin-left:330px;
+    width:200px;
+}
+.mouse3{
+    margin-top:280px;
+    margin-left:350px;
+    width:200px;
+}
+.bumga{
+    width: 250px;
+    margin-left: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:large;
+}
+.bumga1{
+    width:250px;
+    margin-right: 460px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:large;
+}

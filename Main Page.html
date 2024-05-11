@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Main Page.css">
+
+</head>
+<body>
+
+
+     <div class="container">
+        <div class="navbar">
+            <a href="Main Page.html"><img src="logo.png" class="logo"></a>
+            <nav>
+                <ul id="menulist">
+                    <li><a href="Main Page.html">Home</a></li>
+                    <li><a href="items.html">Items</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                    
+                <a href="login page.html"><button class="btnlogin-popup">Login</button></a>
+                </ul>
+            </nav>
+            <img src="none" class="menu-icon" onclick="togglemenu()">
+     </div>
+
+     
+     <div class="shopnow">
+        <a href="items.html"><button type="button" class="spnow">Shop Now <img src="arrow.png"></button>
+    </div>
+   
+
+
+    <!--Image Slider Start-->
+        <div class="slider">
+            <div class="slides">
+                <!--Radio Buttons Start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                <!--Radio Buttons End-->
+                <!--Slide Images Start-->
+                    <div class="slide first">
+                        <img src="Banner1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Banner2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Banner3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Banner4.jpg" alt="">
+                    </div>
+                <!--Slide Images End-->
+
+
+                <!--Automatic Navigation Start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                <!--Automatic Navigation End-->
+            </div>
+            <!--Manual Navigation Start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--Manual Navigation End-->
+        </div>
+    <!--Image Slider End-->
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;               
+            }
+        }, 2500)
+    </script>
+
+
+
+ <a href="items.html"><img src="mouse2.png" class="mouse2"></a>
+ <a href="items.html"><img src="keyboard3.png" class="keyboard3"></a>
+ <a href="items.html"><img src="headset2.png" class="headset2"></a>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+   
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    bottom: 85%;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    background: transparent;
+    border: 2px solid none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    font-size: 18px;
+  }
+  .logo{
+      width: 100px;
+      cursor: pointer;
+      margin: 30px 0;
+      margin-top: 35%;
+}
+.menu-icon{
+    width: 70px;
+    cursor: pointer;
+    display: none;
+    margin: 30px 0;
+    margin-top: 0.5%;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14;
+}
+nav ul li a:hover{
+    color: black(164, 0, 0);
+}
+
+
+.navbar .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navbar .btnlogin-popup:hover {
+    background: black;
+    color: white;
+    
+}
+.navbar li{
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar li:hover::after{
+    transition: left;
+         transform: scaleX(1);
+
+}
+
+
+.abohead h1 {
+    margin-top: 150px;
+   text-align: center;
+
+}
+
+.about p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact h4 {
+    margin-top: 6px;
+}
+.uga{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+}
+.uga2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.uga3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
